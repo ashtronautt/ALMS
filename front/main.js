@@ -22,11 +22,3 @@ prevButton.addEventListener('click', () => {
   parent.removeChild(firstBook);
   parent.appendChild(firstBook);
 });
-
-// Add the following code to ensure only 5 items are visible initially
-document.addEventListener('DOMContentLoaded', () => {
-  const books = myCarousel.querySelectorAll('.carouselBook');
-  for (let i = 0; i < books.length - 5; i++) {
-    myCarousel.removeChild(books[i]);
-  }
-});

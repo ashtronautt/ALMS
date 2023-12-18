@@ -14,9 +14,9 @@ header {
     display: flex;
 }
 
-.logo img {
-    height: 50px;
-    padding-left: 15px;
+header img {
+    width: 90px;
+    padding: 5px 0px 0px 15px;
 }
 
 .manu {
