@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background: #333;
+    height: 50px;
+    display: flex;
+    position: fixed;
+}
+
+header img {
+    width: 90px;
+    padding: 5px 0px 0px 15px;
+}
+
+.manu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.manu ul {
+    display: flex;
+    justify-content: center;
+}
+
+.manu li {
+    list-style: none;
+    margin: 0px 15px;
+}
+
+.manu li a {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-decoration: none;
+    font-family: tahoma;
+    transition: 0.3s;
+}
+
+.manu li a:hover {
+    color: #555;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+main{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(/img/catalog.jpeg);
+    background-size: cover;
+}
+
+.item {
+    margin: 50px;
+    display: flex;
+}
+
+.picture {
+    height: 500px;
+}
+
+.picture img {
+    height: 100%;
+}
+
+.info {
+    width: 450px;
+    height: 500px;
+    background-color: rgb(202 220 232);
+    border-radius: 0 25px 25px 0;
+    position: relative;
+}
+
+
+#Borrow {
+    height: 29px;
+    width: 65px;
+    border-radius: 10px;
+    border: 0px;
+    background: cyan;
+    margin-left: 20px;
+    position: absolute;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+#Borrow:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 1px #007bff;
+}
+
+#Borrow:active {
+    opacity: 0.5;
+}
+
+
+#title, #author{
+    margin: 0px 10px 30px 10px;
+    font-size: 20px;
+}
+
+#description {
+    margin: 0px 10px 30px 10px;
+    font-size: 18px;
+}
+
+.info p {
+    font-size: 20px;
+}
+
+.info h1{
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 11px;
+    text-decoration: underline;
+}
+
+
+
+
+#Related {
+    font-family: tahoma;
+    margin-bottom: 40px;
+}
+
+.relatedBooks {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.relatedBooks #item {
+    height: 100px;
+    width: 50px;
+    border: 1px solid black;
+    background-color: bisque;
+    margin: 10px;
+}
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    background-color: rgba(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+footer li {
+    padding-top: 10px;
+    list-style: none;
+    font-size: 14px;
+}
+
+footer li h1 {
+    font-family: tahoma;
+    font-size: 20px;
+}
+
+.li:hover {
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline;
+}

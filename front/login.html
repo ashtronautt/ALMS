@@ -1,44 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
-    <link rel="stylesheet" href="/front/login.css">
+    <link rel="stylesheet" href="/login.css">
 </head>
 
 <body>
 
     <header>
-        <a href="/front/main.html"><img src="/front/img/logo.webp"></a>
+        <a href="/main.html"><img src="./img/logo.webp"></a>
         <div class="manu">
             <ul>
-                <li><a href="/front/main.html">Home</a></li>
-                <li><a href="index.html">Catalog</a></li>
-                <li><a href="/front/login.html">Login</a></li>
-                <span>/</span>
-                <li><a href="/front/register.html">Register</a></li>
+                <li><a href="/main.html">Home</a></li>
+                <li><a href="/catalog.html">Catalog</a></li>
+                <li><a href="/acaunt.html">Acaunt</a></li>
             </ul>
         </div>
     </header>
 
     <main>
-        <img src="/front/img/7.jpeg" alt="">
+        <img src="./img/catalog.jpeg" alt="">
         <div class="center-block">
             <h1>Login</h1>
-            <form action="./main page/main_page.html">
+            <form>
                 <br>
                 <input type="text" placeholder="Enter your email" id="Email">
-                <p class="comment1"></p>
                 <br>
                 <input type="password" placeholder="Confirm a password" id="Password">
-                <p class="comment2"></p>
+                <p id="comment"></p>
                 <br>
                 <input type="submit" value="Login Now" id="Button">
             </form>
             <div class="links">
-                <p>Don't have an account?<a href="/front/register.html">Signup now</a></p>
+                <p>Don't have an account?<a href="./register.html">Signup now</a></p>
             </div>
         </div>
     </main>
@@ -71,6 +67,8 @@
             <li class="li">Feedback Form</li>
         </ul>
     </footer>
+
+    <script src="/login.js"></script>
 </body>
 
 </html>

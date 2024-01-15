@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background: #333;
+    height: 50px;
+    display: flex;
+    position: fixed;
+}
+
+header img {
+    width: 90px;
+    padding: 5px 0px 0px 15px;
+}
+
+.manu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.manu ul {
+    display: flex;
+    justify-content: center;
+}
+
+.manu li {
+    list-style: none;
+    margin: 0px 15px;
+}
+
+.manu li a {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-decoration: none;
+    font-family: tahoma;
+    transition: 0.3s;
+}
+
+.manu li a:hover {
+    color: #555;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#logReg {
+    height: 50px;
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#logReg ul {
+    display: flex;
+    align-items: center;
+}
+
+#logReg ul li {
+    list-style: none;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+#logReg ul li a {
+    padding: 5px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#logReg button {
+    height: 25px;
+    width: 70px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    background-color: rgba(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    position: absolute;
+    bottom: 0px;
+}
+
+footer li {
+    padding-top: 10px;
+    list-style: none;
+    font-size: 14px;
+}
+
+footer li h1 {
+    font-family: tahoma;
+    font-size: 20px;
+}
+
+.li:hover {
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline;
+}

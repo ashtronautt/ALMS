@@ -1,26 +1,44 @@
-const express = require('express');
+import express from "express";
+import {MongoClient} from "mongodb"
+import {bookRouter} from "./routes/bookRoutes.js"
+import {userRouter} from "./routes/usersRouter.js";
+import session from "express-session"
+import MongoStore from "connect-mongo";
+
+
 const app = express();
-app.set('view engine', 'ejs');
-app.get('/', function(request, response) {
-    response.render('layout/main');
-})
-app.get('/login', function(request, response) {
-    response.render('users/login')
-})
-app.get("/registration", (request, response) => {
-    response.render('users/register');
-})
-app.get("/catalog", (request, response) => {
-    response.render("books/catalog");
-})
-app.get("/book-details", (request, response) => {
-    response.render("books/bookDetails");
-})
-app.listen(process.env.PORT, ()=> {
-    console.log('server run!');
+app.use(express.json())
+
+
+let mongoURI = "mongodb://localhost:27017/alms";
+async function connectDatabase () {
+    let client = await MongoClient.connect(mongoURI);
+    console.log("successful connection to database");
+    return client.db();
+}
+
+export let db = await connectDatabase();
+
+app.use(session({
+    secret: 'mySecret',
+    saveUninitialized: false,
+    cookie: {expires: new Date(253402300000000)},
+    store: new MongoStore({
+        mongoUrl: "mongodb://localhost:27017/alms",
+        collectionName: "sessions"
+    })
+}))
+
+
+app.use(express.static("front"))
+app.use("/books", bookRouter);
+app.use("/auth", userRouter);
+
+
+app.get("/", (req, res) => {
+    // res.sendFile(path.resolve("front/main.html"))
+    res.redirect("/main.html")
 });
 
 
-
-
-
+app.listen(3001) 

@@ -3,10 +3,8 @@
     padding: 0;
 }
 
-
 header {
     width: 100%;
-    height: 50px;
     background: #333;
     height: 50px;
     position: fixed;
@@ -53,38 +51,25 @@ header img {
 
 
 main {
+    background-image: url(/img/catalog.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
     width: 100%;
-    padding-top: 50px;
-    position: relative;
+    padding-top: 70px;
 }
-
-.img {
-    height: 100vh;
-}
-
-.img img {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    opacity: 0.8;
-}
-
-
 
 .banner {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 80px;
 }
 
 .banner li {
-    color: black;
+    color: rgb(0 0 0 / 95%);
     font-size: 48px;
     list-style: none;
-    margin-top: 1%;
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -94,76 +79,59 @@ main {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    padding-top: 20px;
-    position: absolute;
-    top: 200px;
+    margin-top: 50px;
 }
 
-.header {
-    width: 100%;
-    height: 20%;
+
+.item {
+    margin: 0px 30px 0px 30px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid white;
 }
 
-.header h1 {
-    font-size: 80%;
-    text-align: center;
-    color: black;
+.item {
     cursor: pointer;
 }
 
-.header h1:hover {
-    color: #007bff
+.picture img {
+    height: 210px;
 }
 
-.book {
-    background: rgba(255, 255, 255, 0.857);
-    width: calc(100% / 4);
-    height: 150px;
-    margin-top: 30px;
-    border: 1px solid white;
-    cursor: pointer;
-}
-
-.button {
-    height: 80%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.cover {
-    height: 100%;
-    width: 28%;
-}
-
-.cover img {
-    height: 100%;
-}
-
-.author {
-    width: 72%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.author>h1 {
+.info {
+    width: 155px;
+    height: 210px;
+    background-color: rgb(233 241 247);
     text-align: center;
-    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 0 15px 15px 0;
 }
+
+.info h3 {
+    font-size: 15px;
+    margin: 2px;
+}
+
+.info p {
+    font-size: 14px;
+    margin: 2px;
+}
+
+
+
+
+
+
+
 
 
 .viewAll {
-    margin-top: 60px;
+    margin-top: 51px;
     width: 100%;
     height: 50px;
     display: flex;
     justify-content: center;
-    position: absolute;
-    top: 400px;
 }
 
 .viewAll button {
@@ -192,8 +160,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 580px;
+    margin-top: 66px;
 }
 
 .recent h1 {
@@ -208,33 +175,26 @@ main {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 40px;
+    margin-top: 50px;
+    padding-bottom: 40px;
     width: 100%;
-    position: absolute;
-    top: 580px;
+    height: 170px;
 }
 
 #myCarousel {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 40px;
     width: 100%;
 }
+
 
 .carouselBook {
-    background: rgba(255, 255, 255, 0.762);
-    width: calc(100% / 12);
-    margin-top: 15px;
-    cursor: pointer;
+    height: 130px;
 }
 
-.carouselImg {
-    width: 100%;
-}
-
-.carouselImg img {
-    width: 100%;
+.carouselBook img {
+    height: 100%;
 }
 
 .buttons button {
@@ -256,10 +216,9 @@ main {
 footer {
     width: 100%;
     background: #ffffff8a;
-    position: relative;
     display: flex;
     justify-content: space-evenly;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 footer li {
